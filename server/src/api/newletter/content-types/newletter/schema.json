@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "newletters",
+  "info": {
+    "singularName": "newletter",
+    "pluralName": "newletters",
+    "displayName": "Newletter",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "email": {
+      "type": "email",
+      "unique": true,
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sub_productcats",
+  "info": {
+    "singularName": "sub-productcat",
+    "pluralName": "sub-productcats",
+    "displayName": "subProductcat"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "productcats": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::productcat.productcat",
+      "mappedBy": "sub_productcats"
+    },
+    "products": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::product.product",
+      "mappedBy": "sub_productcats"
+    }
+  }
+}
